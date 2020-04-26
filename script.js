@@ -136,6 +136,11 @@ var questions = [
         ]
     }
 ];
+
+// proud i got this far but honestly I have no idea how to proceed.
+// trying to retrieve correct or false from the clicked answer but not sure how to make it work or implement this.
+// i'm very confused
+
 // window.onload = function () {
 //     if (window.jQuery) {
 //         // jQuery is loaded  
