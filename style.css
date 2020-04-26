@@ -29,8 +29,19 @@ p{
     background-color:lightgoldenrodyellow;
     border-radius: 10px;
     padding: 10px;
+ 
 }
 
 #timer{
     text-align:center;
+}
+
+.answers{
+    display:grid;
+    gap: 10px;
+    
+}
+
+.btn{
+    border: solid black;
 }
