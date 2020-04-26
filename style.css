@@ -12,6 +12,7 @@ body{
 
 p{
     background-color: white;
+    justify-content: center;
     display: inline-flex;
     font-size: 50px;
     height: 100px;
@@ -73,4 +74,18 @@ visibility: visible;
 }
 .hidden{
 visibility: hidden;
+}
+
+#questionContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#please{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
