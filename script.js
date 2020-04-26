@@ -41,10 +41,54 @@ function countdown() {
     if (minutes === 0 && seconds === 0) {
         countDownEl.innerHTML = "Game Over!"
     };
-}
+};
 //setInterval calls a function every x milliseconds (function, milliseconds)
 setInterval(countdown, 1000);
 
+// initialize buttons
+
+var startButton = $("#startButton");
+var nextButton = $("#nextButton");
+var answer1 = $("#answer1");
+var answer2 = $("#answer2");
+var answer3 = $("#answer3");
+var answer4 = $("#answer4");
+var questionContainer = $(".questions");
+var answerButtons = $(".answer-btn");
+var questionEl = $("#question")
+var questionIndex = 0;
+
+nextButton.addClass("hide")
+answerButtons.addClass("hide")
+startButton.on("click", game)
+
+function game() {
+    // alert("started!")
+    startButton.addClass("hide");
+    nextButton.removeClass("hide");
+    answerButtons.removeClass("hide");
+    nextQuestions()
+};
+function nextQuestions() {
+    chooseQuestion(questions[questionIndex]);
+
+};
+function chooseQuestion(question) {
+    questionEl.innerText = questions.question
+};
+function answer() {
+
+};
+
+var questions = [
+    {
+        question: "what is 1",
+        answers: [
+            { text: '4', correct: false },
+            { text: '1', correct: true }
+        ]
+    }
+]
 // window.onload = function () {
 //     if (window.jQuery) {
 //         // jQuery is loaded  

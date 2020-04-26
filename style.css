@@ -39,9 +39,38 @@ p{
 .answers{
     display:grid;
     gap: 10px;
-    
+    margin-bottom:10px;
+     
 }
 
 .btn{
     border: solid black;
+}
+
+.btn:hover{
+    border-color: red;
+}
+
+.startButton,.nextbutton{
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+}
+
+#startNext{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.visible{
+visibility: visible;
+}
+.hidden{
+visibility: hidden;
 }
